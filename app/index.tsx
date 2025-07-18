@@ -11,7 +11,7 @@ export default function Index() {
   }, [navigation]);
 
   return (
-    <section
+    <main
     style={{
       height: '100vh',
       display: 'flex',
@@ -20,19 +20,22 @@ export default function Index() {
       padding:'1rem',
       alignItems: 'center',
       backgroundImage: 'linear-gradient(to top, navy, rgba(226, 230, 250, 1))',
+      overflow:'hidden',
     }}
   >
-    <View className='items-center w-80 h-20 justify-between p-3'>
+    <View className='items-center w-80 h-40 justify-center p-3'>
       <Text style={{ color: 'rgba(43, 77, 210, 1)', fontSize: 20, fontWeight:'bold', fontFamily:'serif' }}>Compra Inteligente</Text>
       <Text className='text-[rgba(43,7git7,210,1)] text-xs font-bold font-serif'>Economize tempo e dinheiro nas suas compras!</Text>
     </View>
 
 
-    <View className='border-2 w-screen h-96 justify-between items-center'>
-      <View className='border-2 h-96 w-screen items-center'>
-        <View className='bg-[rgba(40, 82, 173, 0.16)] w-[120vw] h-[105vh] rounded-full absolute top-0 border-2'>
+    <View className='w-screen h-60 justify-between items-center'>
+      <View className='h-96 w-screen items-center'>
+        <View className='bg-cyan-800 w-[130vw] h-[105vh] rounded-full absolute top-0'>
         </View>
-        <View className='bg-blue-400 w-[120vw] h-[105vh] rounded-full absolute top-20 border-2'>
+        <View className='bg-cyan-900 w-[130vw] h-[105vh] rounded-full absolute top-16'>
+        </View>
+        <View className='bg-cyan-200 w-[130vw] h-[105vh] rounded-full absolute top-32'>
         </View>
       </View>
       <TouchableOpacity
@@ -41,6 +44,6 @@ export default function Index() {
       </TouchableOpacity>
     </View>
 
-    </section>
+    </main>
   );
 }
