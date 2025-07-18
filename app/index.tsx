@@ -19,7 +19,7 @@ export default function Index() {
       justifyContent: 'space-between',
       padding:'1rem',
       alignItems: 'center',
-      backgroundImage: 'linear-gradient(to top, navy, rgba(226, 230, 250, 1))',
+      backgroundImage: 'linear-gradient(to bottom, rgba(226, 230, 250, 1), rgba(52, 72, 179, 0.91))',
       overflow:'hidden',
     }}
   >
@@ -31,15 +31,24 @@ export default function Index() {
 
     <View className='w-screen h-60 justify-between items-center'>
       <View className='h-96 w-screen items-center'>
-        <View className='bg-cyan-800 w-[130vw] h-[105vh] rounded-full absolute top-0'>
+        <View className='w-[130vw] h-[130vh] rounded-full absolute top-0' style={{
+          backgroundColor:'rgba(35, 68, 139, 0.08)',
+        }}>
         </View>
-        <View className='bg-cyan-900 w-[130vw] h-[105vh] rounded-full absolute top-16'>
+        <View className=' w-[130vw] h-[130vh] rounded-full absolute top-16'style={{
+          backgroundColor:'rgba(40, 82, 173, 0.16)',
+        }}>
         </View>
-        <View className='bg-cyan-200 w-[130vw] h-[105vh] rounded-full absolute top-32'>
+        <View className='w-[130vw] h-[100vh] rounded-full absolute top-32' style={{
+          backgroundColor:'rgba(15, 31, 65, 1)',
+        }}>
         </View>
       </View>
       <TouchableOpacity
-      className='bg-blue-500 w-60 h-10 rounded-md flex items-center justify-center absolute bottom-2'>
+      style={{
+        backgroundColor:'rgba(49, 86, 237, 1)',
+      }}
+      className='bg-blue-500 w-60 h-10 rounded-2xl flex items-center justify-center absolute bottom-2'>
         <Text className="font-bold text-lg text-white font-serif">Entrar</Text>
       </TouchableOpacity>
     </View>
